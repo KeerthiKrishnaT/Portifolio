@@ -2,12 +2,16 @@ import React, { useEffect, useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { BiDownload } from "react-icons/bi";
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
 function Resume() {
-  const [width, setWidth] = useState(1200);
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -18,7 +22,7 @@ function Resume() {
         className="h-full w-full object-cover opacity-10 absolute bottom-0"
       />
       <a
-        href={"Resume.pdf"}
+        href={"Keerthi Resume.pdf"}
         target="_blank"
         rel="noreferrer"
         className="flex items-center z-20 justify-center gap-3 px-6 py-2 rounded  shadow-md text-white bg-purple-600 hover:bg-purple-700 transition duration-300 ease-in-out my-3"
@@ -26,8 +30,8 @@ function Resume() {
         <BiDownload fontSize={20} /> Download CV
       </a>
       <div className="py-12 flex justify-center items-center overflow-hidden z-20">
-        <Document file="Resume.pdf" className="flex justify-center shadow-xl">
-          <Page pageNumber={1} scale={width >1024 ? 1.7 : width > 768 ? 1.2 : 0.8} />
+        <Document file="Keerthi Resume.pdf" className="flex justify-center shadow-xl">
+          <Page pageNumber={1} scale={Math.min(width / 768, 1.5)}  />
         </Document>
       </div>
     </div>
