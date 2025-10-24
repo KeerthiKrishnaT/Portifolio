@@ -13,12 +13,13 @@ function Introduce() {
         <div className="flex items-center m-auto justify-center w-11/12 lg:w-3/4 lg:mr-10">
           <span className="flex flex-col gap-3 text-white items-start  text-base justify-center font-semibold lg:text-lg">
             <p>
-              I'm Keerthikrishna T, a MERN stack Developer from Kerala with
-              expertise in React, Node.js,MongoDB and Express.js. With over
-              of 6 months of experience,As a MERN Stack developer Intern at 
-              cb tech,I worked on multiple projects, including a TodoList 
-              app and an E-commerce optimized site performance using Node.js.
-              With a passion for learning and attention to detail,
+              I'm Keerthi Krishna T, a MERN Stack Developer from Kerala with
+              expertise in React, Node.js, MongoDB, and Express.js. Currently working as a 
+              MERN Stack Developer at Wyenfos Infotech Pvt Ltd, where I've developed 
+              advanced billing and management systems with role-based access control, 
+              real-time data updates using Socket.IO, and Firebase authentication. 
+              With over 1 year of practical experience in building responsive user interfaces, 
+              RESTful APIs, and implementing authentication and state management.
             </p>
           </span>
         </div>
