@@ -23,7 +23,7 @@ function About() {
           <div>
             <p className="mb-2"><span className="font-semibold text-white">LinkedIn:</span> <a href="https://www.linkedin.com/in/keerthi-krishna-24aa95184/" className="text-[#ab4dea] hover:underline" target="_blank" rel="noopener noreferrer">linkedin.com/in/keerthi-krishna-24aa95184</a></p>
             <p className="mb-2"><span className="font-semibold text-white">GitHub:</span> <a href="https://github.com/KeerthiKrishnaT" className="text-[#ab4dea] hover:underline" target="_blank" rel="noopener noreferrer">github.com/KeerthiKrishnaT</a></p>
-            <p className="mb-2"><span className="font-semibold text-white">Portfolio:</span> <a href="https://portifolio-keerthi-krishna-ts-projects-qddx2zd3b.vercel.app" className="text-[#ab4dea] hover:underline" target="_blank" rel="noopener noreferrer">portfolio-keerthi-krishna-ts-projects.vercel.app</a></p>
+            <p className="mb-2"><span className="font-semibold text-white">Portfolio:</span> <a href="https://portifolio-ow7ulyvhk-keerthi-krishna-ts-projects.vercel.app/" className="text-[#ab4dea] hover:underline" target="_blank" rel="noopener noreferrer">portifolio-ow7ulyvhk-keerthi-krishna-ts-projects.vercel.app</a></p>
           </div>
         </div>
       </div>
